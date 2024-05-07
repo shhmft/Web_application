@@ -1,5 +1,6 @@
 import requests
 import psycopg2
+import config
 
 
 class GetJSON:
@@ -25,10 +26,10 @@ class GetJSON:
     def create_db(self):
         """ Соединение с базой данных """
         connection = psycopg2.connect(
-            host='127.0.0.1',
-            user='postgres',
-            password='root',
-            database='post_db'
+            host=config.host,
+            user=config.user,
+            password=config.password,
+            database=config.database
         )
         self.cur = connection.cursor()
 

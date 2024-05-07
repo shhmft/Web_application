@@ -1,0 +1,89 @@
+h1 {
+    font-family: 'Century Gothic';
+    font-size:45px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5);
+}
+
+.comment {
+    font-family: 'Century Gothic';
+    font-size: 24px;
+    color: #b5b5b5;
+    text-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5);
+    margin-bottom: 80px;
+}
+
+span {
+    font-family: 'Century Gothic';
+    font-size: 32px;
+    color: #e8e8e8;
+}
+
+.bigcontainer {
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+body {
+    background-color: #424242;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.Finder_box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.Finder_box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #575757;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Finder_box input[type="text"] {
+  width: calc(100% - 40px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.Finder_box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ababab;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Finder_box button:hover {
+  background-color: #9c9a9a;
+}
+

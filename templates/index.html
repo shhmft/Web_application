@@ -2,18 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Finder</title>
   </head>
   <body>
     <header>
-      <h1>Поиск поста по комментарию</h1>
+      <h1 class="block">Поиск поста по комментарию</h1>
     </header>
 
-    <div class="Finder_box">
-      <form action="/search" method="POST">
-        <input type="text" name="search_query" placeholder="Введите комментарий...">
-        <button type="submit">--></button>
-      </form>
+    <div class="bigcontainer">
+      <div class="block">
+        <span>Это простой поисковик, который ищет заголовки постов и комментарии по комментарию или его части</span>
+      </div>
+
+      <div class="container">
+        <div class="Finder_box">
+          <form action="/search" method="POST">
+            <input type="text" name="search_query" placeholder="Введите комментарий...">
+            <button type="submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+
     </div>
+
   </body>
 </html>

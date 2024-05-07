@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
     <title>Search Results</title>
 </head>
 <body>
-    <h1>Результаты поиска</h1>
+    <header>
+      <h1 class="block">Результаты поиска</h1>
+    </header>
     <ul>
         {% for comment in search_results %}
-            <h2>Заголовок: {{ comment[5] }}</h2>
-            <li><b>Комментарий: </b>{{ comment[4] }}</li>
+            <h2>{{ comment[1] }}</h2>
+            <p class="comment">{{ comment[0] }}</p>
         {% endfor %}
     </ul>
 </body>

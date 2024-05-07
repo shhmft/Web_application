@@ -21,8 +21,6 @@ class GetJSON:
         self.list_posts = response_posts.json()
         self.list_comments = response_comments.json()
 
-
-
     def create_db(self):
         """ Соединение с базой данных """
         connection = psycopg2.connect(

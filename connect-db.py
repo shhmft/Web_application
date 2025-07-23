@@ -14,7 +14,6 @@ def index():
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     """ Обработка запроса и вывод результата """
-    print()
     if request.method == 'POST':
         search_query = request.form['search_query']  # Получение данных из input поля
         if len(search_query) >= 3:  # Проверка на длинну полученных данных
